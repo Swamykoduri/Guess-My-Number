@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-color: rgb(170, 103, 115);
+}
+
+/************************** header ***********************/
+
+header{
+  position: relative;
+  height: 40vh;
+  border-bottom: 10px solid #eee;
+}
+
+main {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-section{
+  width: 52rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-section{
+  width: 52rem;
+  font-size: 17px;
+}
+
+
+/***************************** Elements ***************************/
+
+
+h1 {
+  font-size: 2rem;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+}
+
+.range {
+  float: right;
+  margin: 45px;
+  font-size: 13px;
+}
+
+.again {
+  margin: 25px 40px;
+}
+
+button {
+  padding: 18px 30px;
+  border-radius: 50px;
+  border: none;
+  font-family: 'Press Start 2P', sans-serif;
+  cursor: pointer;
+  transition: 0.15s; 
+}
+
+.number {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #eee;
+  color: #333;
+  padding: 50px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.input-value {
+  width: 200px;
+  height: 100px;
+  padding: 15px;
+  color: inherit;
+  font-family: inherit;
+  background: none;
+  border: solid 6px #eee;
+  font-size: 40px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+}
+
+.message {
+  margin-bottom: 6rem;
+  font-size: 20px;
+}
+
+.score {
+  margin-bottom: 2rem;
+}
+
+
+.button:hover {
+  filter: brightness(0.8);
+}
+
+
+/**************************** Media Query ***************************/
+
+@media (max-width: 600px){
+  .button {
+    padding: 9px 12px;
+    font-size: 8px;
+  }
+
+  h1 {
+  font-size: 1rem;
+  }
+
+  .range {
+    margin: 33px 15px;
+    font-size: 7px;
+  }
+
+  .number {
+    font-size: 25px;
+    padding: 20px 30px;
+    border-radius: 5px;
+  }
+
+  .input-value {
+    width: 100px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .message {
+    font-size: 9px;
+    margin-bottom: 3rem;
+  }
+
+  .score {
+    font-size: 8px;
+  }
+
+  .highscore {
+    font-size: 8px;
+  }
+
+  .again {
+    margin: 22px;
+  }
+
+}
+
